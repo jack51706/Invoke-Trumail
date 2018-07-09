@@ -33,7 +33,7 @@ function Invoke-Trumail {
   
     ForEach ($Email in $EmailList) {
 
-      $API = "534e2038-35dd-4286-82bf-e8c199a90669"
+      $API = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     
       $Req = Invoke-RestMethod -Method Get -Uri "https://api.trumail.io/v2/lookups/json?email=$($Email)&token=$($API)"
       $Results += $Req
